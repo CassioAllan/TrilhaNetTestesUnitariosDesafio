@@ -1,9 +1,20 @@
 ﻿using TestesUnitarios.Desafio.Console.Services;
 
+
 ValidacoesLista validacoes = new ValidacoesLista();
+ValidacoesString validacaoString = new ValidacoesString();
 
 List<int> numeroLista = new List<int> { 2, 4, -6, 8 };
+string palavras = "um texto especifico";
+string especificoTexto = "texto";
+string especifico2 = "especifico";
 var oito = 8;
+
+int quantidadeCaracters = validacaoString.RetornarQuantidadeCaracteres(palavras);
+
+bool contemPalavra = validacaoString.ContemCaractere(palavras, especificoTexto);
+
+var terminaComPalavra = validacaoString.TextoTerminaCom(palavras, especifico2);
 
 int maiorNumero = validacoes.RetornarMaiorNumeroLista(numeroLista);
 
